@@ -2,6 +2,7 @@ import "./App.css";
 import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Header from "./components/Header";
+import LoggedIn from "./components/state/LoggedIn";
 import Status from "./components/Status";
 // import Person from "./components/Person";
 // import PersonList from "./components/PersonList";
@@ -40,6 +41,7 @@ function App() {
       <Status status="success" />
       <Header>Placeholder here</Header>
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      <LoggedIn />
     </div>
   );
 }
