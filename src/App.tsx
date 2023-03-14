@@ -1,4 +1,5 @@
 import "./App.css";
+import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Header from "./components/Header";
 import Status from "./components/Status";
@@ -38,6 +39,7 @@ function App() {
       {/* <PersonList names={nameList} /> */}
       <Status status="success" />
       <Header>Placeholder here</Header>
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
     </div>
   );
 }
