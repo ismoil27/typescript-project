@@ -1,9 +1,7 @@
+import { Name } from "./Person.types";
+
 type PersonListProps = {
-  names: {
-    id: number;
-    first: string;
-    last: string;
-  }[];
+  names: Name[];
 };
 
 const PersonList = (props: PersonListProps) => {
@@ -11,7 +9,7 @@ const PersonList = (props: PersonListProps) => {
     <div>
       {props.names.map((name) => {
         return (
-          <h2 key={name.id}>
+          <h2 key={name.first}>
             {name.first} {name.last}
           </h2>
         );
