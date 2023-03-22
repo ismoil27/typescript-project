@@ -1,5 +1,7 @@
 import "./App.css";
 import Container from "./components/Container";
+import Box from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
 import Greet from "./components/Greet";
 import Header from "./components/Header";
 import Status from "./components/Status";
@@ -40,6 +42,9 @@ function App() {
       <Status status="success" />
       <Header>Placeholder here</Header>
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
