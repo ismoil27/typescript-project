@@ -1,4 +1,4 @@
-import "./App.css";
+import Counter from "./components/class/Counter";
 import Container from "./components/Container";
 import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
@@ -44,9 +44,10 @@ function App() {
       <Status status="success" />
       <Header>Placeholder here</Header>
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+      <Counter message="The count value is" />
     </div>
   );
 }
